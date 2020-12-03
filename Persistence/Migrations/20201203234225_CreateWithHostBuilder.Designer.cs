@@ -8,8 +8,8 @@ using Persistence;
 namespace Persistence.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20201203233813_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20201203234225_CreateWithHostBuilder")]
+    partial class CreateWithHostBuilder
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
