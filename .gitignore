@@ -1,0 +1,12 @@
+obj/
+bin/
+Properties/
+appsettings.json
+.vscode/
+.vs/
+.DS_Store
+*.sln
+*.log
+*.mdf
+*.ldf
+*.db
