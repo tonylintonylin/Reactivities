@@ -1,15 +1,18 @@
 import "semantic-ui-css/semantic.min.css";
-import React, { useState, useEffect, SyntheticEvent } from "react";
+import agent from "../api/agent";
+
+import React, { useState, useEffect, SyntheticEvent, useContext } from "react";
+import ActivityStore from "../stores/ActivityStore";
+
 import { Container } from "semantic-ui-react";
 import { IActivity } from "../models/activity";
 import { NavBar } from "../../features/nav/NavBar";
 import { ActivityDashboard } from "../../features/activities/dashboard/ActivityDashboard";
-import agent from "../api/agent";
 import { LoadingComponent } from "./LoadingComponent";
 
 const App = () => {
+  const activityStore = useContext(ActivityStore);
   const [activities, setActivities] = useState<IActivity[]>([]);
-
   const [selectedActivity, setSelectedActivity] = useState<IActivity | null>(
     null
   );
