@@ -1,4 +1,3 @@
-import { create } from "domain";
 import React from "react";
 import { Grid } from "semantic-ui-react";
 import { IActivity } from "../../../app/models/activity";
