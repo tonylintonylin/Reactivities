@@ -106,7 +106,7 @@ export const ActivityForm: React.FC<IProps> = ({
         <Button
           onClick={() => setEditMode(false)}
           floated="right"
-          type="submit"
+          type="button"
           content="Cancel"
         />
       </Form>
