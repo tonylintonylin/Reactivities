@@ -3,6 +3,7 @@ import { act } from "react-dom/test-utils";
 import { Grid, List } from "semantic-ui-react";
 import { IActivity } from "../../../app/models/activity";
 import { ActivityDetails } from "../details/ActivityDetails";
+import { ActivityForm } from "../form/ActivityForm";
 import { ActivityList } from "./ActivityList";
 
 interface IProps {
@@ -16,7 +17,8 @@ export const ActivityDashboard: React.FC<IProps> = ({ activities }) => {
         <ActivityList activities={activities}></ActivityList>
       </Grid.Column>
       <Grid.Column width={6}>
-        <ActivityDetails></ActivityDetails>
+        <ActivityDetails />
+        <ActivityForm />
       </Grid.Column>
     </Grid>
   );
