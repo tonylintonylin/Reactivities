@@ -10,7 +10,7 @@ export const ActivityForm = () => {
         <Form.Input placeholder="Category" />
         <Form.Input type="date" placeholder="Date" />
         <Form.Input placeholder="City" />
-        <Form.Input placeholder="Venur" />
+        <Form.Input placeholder="Venue" />
       </Form>
     </Segment>
   );
